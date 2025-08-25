@@ -35,8 +35,8 @@ int main()
             }
             for(auto it:adj[node])
             {
-                long long weight=it.first;
-                long long child=it.second;
+                long long child=it.first;
+                long long weight=it.second;
                 long long sum=distance+weight;
                 if(sum<dis[child])
                 {
@@ -54,5 +54,6 @@ int main()
 
     }
 }
+
 
 
