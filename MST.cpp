@@ -11,39 +11,11 @@ int main()
         int m;
         cin>>m;
         vector<pair<int,int>>adj[n];
-        map<string,pair<int,int>>mp;
-        int val=-1;
         vector<pair<pair<string,string>,int>>v;
         for(int i=0;i<m;i++)
         {
-            string s;
-            string ss;
-            int w;
-            cin>>s>>ss>>w;
-            int u,v;
-            if(mp[s].first!=1)
-            {
-                val++;
-                mp[s].second=val;
-                mp[s].first=1;
-                u=mp[s].second;
-            }
-            if(mp[ss].first!=1)
-            {
-                val++;
-                mp[ss].first=1;
-                mp[ss].second=val;
-                v=mp[ss].second;
-
-            }
-            if(mp[s].first==1)
-            {
-                u=mp[s].second;
-            }
-            if(mp[ss].first==1)
-            {
-                v=mp[ss].second;
-            }
+            int u,v,w;
+            cin>>u>>v>>w;
             adj[u].push_back({v,w});
             adj[v].push_back({u,w});
 
