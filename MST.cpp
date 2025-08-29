@@ -11,7 +11,6 @@ int main()
         int m;
         cin>>m;
         vector<pair<int,int>>adj[n];
-        vector<pair<pair<string,string>,int>>v;
         for(int i=0;i<m;i++)
         {
             int u,v,w;
@@ -62,4 +61,5 @@ int main()
 
     }
 }
+
 
