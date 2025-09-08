@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-bool checkBit(ll left,ll i)
+ll checkBit(ll left,ll i)
 {
     return (left>>i)& 1;
 }
@@ -26,4 +26,5 @@ int main()
   cin>>l>>r;
   cout<<findAND(l,r)<<endl;
 }
+
 
